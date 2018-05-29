@@ -10,32 +10,33 @@ class SearchResults extends Component {
     }
 
     clickHandler = () => {
-        document.getElementById('searchResults').className = 'notDisplayed';
+        document.getElementById('searchResults').className = `${classes.noDisplay}`;
         document.getElementById('searchInput').value = '';
     }
 
     render () {
         const baseUrl = 'https://image.tmdb.org/t/p/w300';
-        return (
-            <div className={classes.results}>
-                <ul id='searchResults' onClick={this.clickHandler}>
-                    {this.props.searchResults.map((elem, index) => {
-                        return (
-                            <li key={index} onClick={this.clickHandler}>
-                                <Link to={`/movie/${this.props.searchResults[index].id}`}>
-                                    <img src={this.props.searchResults[index].poster_path === null ? 'http://via.placeholder.com/300*450' : `${baseUrl}${this.props.searchResults[index].poster_path}`} alt={`{this.props.searchResults[index].title} poster`} className={classes.resultsPoster} />
-                                    <div>
-                                        <h5>{this.props.searchResults[index].title}</h5>
-                                        <p>{this.props.searchResults[index].release_date}</p>
-                                    </div>
-                                </Link>
-                            </li>
-                        );
-                    })}
-                </ul>
-            </div>
-        );
-    }
+            return (
+                <div id='searchResults'>
+                    <div className={classes.resultsShown}>
+                        <ul onClick={this.clickHandler}>
+                            {this.props.searchResults.map((elem, index) => {
+                                return (
+                                    <li key={index} onClick={this.clickHandler}>
+                                        <Link to={`/movie/${this.props.searchResults[index].id}`}>
+                                            <img src={this.props.searchResults[index].poster_path === null ? 'http://via.placeholder.com/300*450' : `${baseUrl}${this.props.searchResults[index].poster_path}`} alt={`{this.props.searchResults[index].title} poster`} className={classes.resultsPoster} />
+                                            <div>
+                                                <h5>{this.props.searchResults[index].title}</h5>
+                                                <p>{this.props.searchResults[index].release_date}</p>
+                                            </div>
+                                        </Link>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </div>
+                </div>   
+            )};
 }
 
 export default SearchResults;

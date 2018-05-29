@@ -1,36 +1,39 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+
+* {
+    font-family: 'Julius Sans One', sans-serif;
+}
 
 .container {
   width: 90%;
   margin: 0 auto;
-  font-family: 'Inconsolata', monospace;
 }
 
-.YonghwaHome {
+.Flick {
   text-align: center;
 }
 
-.YonghwaHome-logo {
+.Flick-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
 
-.YonghwaHome-header {
+.Flick-header {
   background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
 }
 
-.YonghwaHome-title {
+.Flick-title {
   font-size: 1.5em;
 }
 
-.YonghwaHome-intro {
+.Flick-intro {
   font-size: large;
 }
 
-@keyframes YonghwaHome-logo-spin {
+@keyframes Flick-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }

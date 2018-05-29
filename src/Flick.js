@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import classes from './YonghwaHome.css';
+import classes from './Flick.css';
 
 import NewMovies from './containers/NewMovies/NewMovies';
 import MainLogo from './components/Logo/Logo';
 import Search from './containers/Search/Search';
 
-class YonghwaHome extends Component {
+class Flick extends Component {
   render() {
     return (
       <div className={classes.container}>
@@ -17,4 +17,4 @@ class YonghwaHome extends Component {
   }
 }
 
-export default YonghwaHome;
+export default Flick;

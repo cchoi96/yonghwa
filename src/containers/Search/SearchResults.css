@@ -1,15 +1,14 @@
-.results {
-    margin-top: -16px;
+.resultsShown {
     position: absolute;
     z-index: 9999;
-    width: 100%;
+    width: 104%;
     height: 10px;
     overflow-y: visible;
     text-align: left;
     word-wrap: break-word;
 }
 
-.results li {
+.resultsShown li {
     list-style-type: none;
     background-color: #263238;
     -webkit-transition: all 0.3s ease-out;
@@ -19,11 +18,11 @@
     margin-right: 19.5%;
 }
 
-.results li:hover {
+.resultsShown li:hover {
     background-color: #000;
 }
 
-.results a {
+.resultsShown a {
     color: #fff;
     display: flex;
     padding: 20px 20px;
@@ -37,7 +36,7 @@
 }
 
 @media (max-width: 450px) {
-    .results {
+    .resultsShown {
         font-size: 0.8em;
     }
 }

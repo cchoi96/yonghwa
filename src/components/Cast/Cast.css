@@ -1,15 +1,61 @@
 .figContainer {
-    margin-top: 80px;
-    margin-right: 10%;
-    margin-left: 10%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.castCircle {
+    margin: 5px auto;
+    position: relative;
 }
 
 .castImg {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.castInfo {
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-items: center;
+    top: 0;
+    color: #FFFFFF;
+    background-color: #90AFC5;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.castInfo h4 {
+    margin-top: 60px;
+    background-color: #90AFC5;
+}
+
+.castCircle:hover .castInfo {
+    visibility: visible;
+    opacity: 0.9;
+}
+
+@media (min-width: 450px) {
+    .figContainer {
+        width: 400px;
+    }
+}
+
+@media (min-width: 700px) {
+    .figContainer {
+        width: 75%;
+    }
 }

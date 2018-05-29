@@ -8,24 +8,29 @@ class Search extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            searchResults: []
+            searchResults: [],
         };
         this.emptySubmissionHandler = this.emptySubmissionHandler.bind(this);
         this.searchHandler = this.searchHandler.bind(this);
+        this.resultsHandler = this.resultsHandler.bind(this);
     }
 
     emptySubmissionHandler(event) {
         event.preventDefault();
     }
 
-    searchHandler() {
+    resultsHandler = () => {
+        document.getElementById('searchResults').style.display= 'none';
+    }
+
+    searchHandler = () => {
         const apiKey = 'abc14d611d83e5377cc1aa1b311591fc';
 
-        document.getElementById('searchResults').className = 'formResults';
+        document.getElementById('searchResults').className = `${classes.results}`;
         let searchValue = document.getElementById('searchInput').value;
 
         if (searchValue === '') {
-            document.getElementById('searchResults').className = 'noDisplay';
+            document.getElementById('searchResults').className = `${classes.noDisplay}`;
         }
 
         axios.get('https://api.themoviedb.org/3/search/movie?api_key=' + apiKey + '&language=en-US&query=' + searchValue + '&page=1&include_adult=false')
@@ -40,10 +45,11 @@ class Search extends Component {
     }
 
     render () {
+        
         return (
                 <form onSubmit={this.emptySubmissionHandler} className={classes.searchForm}>
                     <input onKeyUp={this.searchHandler} id='searchInput' className={classes.Search} type='text' placeholder='Search your movie!' required />
-                    <SearchResults searchResults={this.state.searchResults} />
+                    <SearchResults searchResults={this.state.searchResults} onClick={this.resultsHandler}/>
                 </form>
         );
     }

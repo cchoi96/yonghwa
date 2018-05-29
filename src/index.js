@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import './index.css';
-import YonghwaHome from './YonghwaHome';
+import Flick from './Flick';
 import Movie from './containers/Movie/Movie';
 import registerServiceWorker from './registerServiceWorker';
 
@@ -13,7 +13,7 @@ class App extends Component {
             <BrowserRouter>
                 <Switch>
                     <Route path={'/movie/:id'} component={Movie} />
-                    <Route path={'/'} component={YonghwaHome} />
+                    <Route path={'/'} component={Flick} />
                 </Switch>
             </BrowserRouter>
         );

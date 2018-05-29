@@ -1,9 +1,22 @@
 .Logo {
     text-align: center;
-    font-size: 2rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.Logo img {
+    width: 85px;
+    padding-right: 12px;
+    padding-bottom: 15px;
+    vertical-align: middle;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 .Logo a {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 2rem;
     text-decoration: none;
     color: black;
     -webkit-transition: all 0.2s ease-out;
@@ -12,5 +25,5 @@
 }
 
 .Logo a:hover {
-    color: #1DE9B6;
+    color: #80CED7;
 }
