@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  font-family: 'Inconsolata', monospace;
+}
+
+.YonghwaHome {
+  text-align: center;
+}
+
+.YonghwaHome-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.YonghwaHome-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.YonghwaHome-title {
+  font-size: 1.5em;
+}
+
+.YonghwaHome-intro {
+  font-size: large;
+}
+
+@keyframes YonghwaHome-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

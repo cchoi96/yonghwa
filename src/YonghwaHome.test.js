@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import YonghwaHome from './YonghwaHome';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+  ReactDOM.render(<YonghwaHome />, div);
   ReactDOM.unmountComponentAtNode(div);
 });

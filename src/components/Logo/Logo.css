@@ -1,5 +1,16 @@
-.Logo img {
-    display: block;
-    margin: 0 auto;
-    width: 15%;
+.Logo {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.Logo a {
+    text-decoration: none;
+    color: black;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.Logo a:hover {
+    color: #1DE9B6;
 }

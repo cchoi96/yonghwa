@@ -3,6 +3,7 @@ section {
 }
 
 .newMovies {
+    margin-top: 40px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -57,7 +58,7 @@ section {
     background-color: #90AFC5;
     color: #FFFFFF;
     opacity: 0;
-    visiblity: hidden;
+    visibility: hidden;
     border-radius: 15px;
 }
 
@@ -66,7 +67,7 @@ section {
     border-radius: 15px;
 }
 
-.nmInfo:hover {
-    visbility: visible;
-    opacity: 1;
+.nmLink:hover .nmInfo {
+    visibility: visible;
+    opacity: 0.9;
 }

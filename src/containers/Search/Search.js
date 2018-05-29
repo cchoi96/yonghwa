@@ -25,7 +25,7 @@ class Search extends Component {
         let searchValue = document.getElementById('searchInput').value;
 
         if (searchValue === '') {
-            document.getElementById('searchResults').className = 'notDisplayed';
+            document.getElementById('searchResults').className = 'noDisplay';
         }
 
         axios.get('https://api.themoviedb.org/3/search/movie?api_key=' + apiKey + '&language=en-US&query=' + searchValue + '&page=1&include_adult=false')

@@ -1,0 +1,15 @@
+.figContainer {
+    margin-top: 80px;
+    margin-right: 10%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.castImg {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}

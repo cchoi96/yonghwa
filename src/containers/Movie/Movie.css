@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+* {
+    font-family: 'Inconsolata', monospace;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+.movieSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: -15px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: left;
+    padding-left: 0;
+}
+
+.movieSection li {
+    margin-left: 15%;
+    list-style-type: none;
+    text-align: left;
+    padding-bottom: 6px;
+}
+
+
+.moviePoster {
+    margin: 0 auto;
+}
+
+.movieTitle {
+    font-weight: 600;
+    margin-left: 15%;
+}
+
+.overview {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.posterImg {
+    border-radius: 15px;
+}
+
+@media (min-width: 500px) {
+    .movieSection {
+        flex-direction: row;
+    }
+}
