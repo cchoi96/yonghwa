@@ -12,28 +12,3 @@
 .Flick {
   text-align: center;
 }
-
-.Flick-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.Flick-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.Flick-title {
-  font-size: 1.5em;
-}
-
-.Flick-intro {
-  font-size: large;
-}
-
-@keyframes Flick-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}

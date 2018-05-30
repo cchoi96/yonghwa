@@ -4,6 +4,7 @@ import axios from 'axios';
 import Logo from '../../components/Logo/Logo';
 import Search from '../Search/Search';
 import Cast from '../../components/Cast/Cast';
+import Footer from '../../components/Footer/Footer';
 import classes from './Movie.css';
 
 
@@ -36,7 +37,7 @@ class Movie extends Component {
         })
     }
 
-    componentDidMount() {
+    componentWillMount() {
         this.movieData();
       }
     
@@ -74,6 +75,7 @@ class Movie extends Component {
                     </div>
                 </div>
                 <Cast cast={this.state.movie.credits.cast} />
+                <Footer />
             </div>
         );
     }

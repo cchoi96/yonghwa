@@ -4,6 +4,7 @@ import classes from './Flick.css';
 import NewMovies from './containers/NewMovies/NewMovies';
 import MainLogo from './components/Logo/Logo';
 import Search from './containers/Search/Search';
+import Footer from './components/Footer/Footer';
 
 class Flick extends Component {
   render() {
@@ -12,6 +13,7 @@ class Flick extends Component {
         <MainLogo />
         <Search />
         <NewMovies />
+        <Footer />
       </div>
     );
   }

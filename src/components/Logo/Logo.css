@@ -7,7 +7,7 @@
 .Logo img {
     width: 85px;
     padding-right: 12px;
-    padding-bottom: 15px;
+    padding-bottom: 7px;
     vertical-align: middle;
     -webkit-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
@@ -26,4 +26,12 @@
 
 .Logo a:hover {
     color: #80CED7;
+}
+
+.Logo a:hover img {
+    transform: rotate(10deg);
+}
+
+.Logo img:hover {
+    transform: rotate(10deg);
 }
