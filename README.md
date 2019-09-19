@@ -9,3 +9,7 @@ See a live demo at: https://musing-wing-5d5506.netlify.com/
 * View detailed movie info that includes the rating, number of votes, cast, genres, and poster.
 
 ![](src/assets/Flick.png)
+
+# Current Bugs
+* New Movies search not working
+* Various security vulnerabilities
