@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Exo&display=swap');
+
 .Logo {
+    font-family: 'Exo', sans-serif;
     text-align: center;
     width: 100%;
     margin: 0 auto;
@@ -15,7 +18,6 @@
 }
 
 .Logo a {
-    font-family: 'Julius Sans One', sans-serif;
     font-size: 2rem;
     text-decoration: none;
     color: black;

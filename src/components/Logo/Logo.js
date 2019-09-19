@@ -8,7 +8,7 @@ class MainLogo extends Component {
     render () {
         return (
             <div className={classes.Logo}>
-                <Link to={'/'}> <h1><img src={flick} alt='Flick Logo'/>Flick</h1></Link>
+                <Link to={'/'}> <h1><img src={flick} alt='Flick Logo'/>flick</h1></Link>
             </div>
         );
     }
