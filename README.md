@@ -13,7 +13,7 @@ See a live demo at: https://flickmovies.netlify.com
 ## Getting Started
 
 - Install all dependencies (using the `npm install` command).
-- Run the development web server using the `node express_server.js` command.
+- Run the development web server using the `npm start` command.
 
 # Current Bugs
 * None at the moment. If you find one please message me!
